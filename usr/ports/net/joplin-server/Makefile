@@ -1,6 +1,6 @@
 PORTNAME=	joplin
 DISTVERSIONPREFIX=	server-v
-DISTVERSION=	3.7.3
+DISTVERSION=	3.7.4
 CATEGORIES=	net
 MASTER_SITES=	https://github.com/ruckonator/freebsd-net-joplin-server/raw/refs/heads/tarballs/node-modules/:prefetch \
 				https://nodejs.org/download/release/v24.22.2/:node_headers
@@ -14,9 +14,9 @@ WWW=		https://joplinapp.org/
 
 LICENSE=	MIT
 
-FETCH_DEPENDS=	npm${NODEJS_SUFFIX}>0:www/npm${NODEJS_SUFFIX}
-BUILD_DEPENDS=	npm${NODEJS_SUFFIX}>0:www/npm${NODEJS_SUFFIX}
-LIB_DEPENDS=	libvips.so:graphics/vips
+FETCH_DEPENDS=  npm${NODEJS_SUFFIX}>0:www/npm${NODEJS_SUFFIX}
+BUILD_DEPENDS=  npm${NODEJS_SUFFIX}>0:www/npm${NODEJS_SUFFIX}
+LIB_DEPENDS=    libvips.so:graphics/vips
 
 USE_GITHUB=	yes
 GH_ACCOUNT= laurent22
@@ -30,6 +30,7 @@ GROUPS=		joplin
 MAKE_ENV+= npm_config_nodedir=${WRKDIR}/node-v24.22.2 SHARP_FORCE_GLOBAL_LIBVIPS=1 BUILD_SEQUENCIAL=1 YARN_ENABLE_GLOBAL_CACHE=false YARN_ENABLE_NETWORK=false YARN_CACHE_FOLDER=${WRKDIR}/node-modules-cache
 
 BINARY_ALIAS=       python3=${PYTHON_CMD}
+
 
 TARGET_ORDER_OVERRIDE=  750:npm-install-node-modules
 
@@ -61,7 +62,7 @@ post-extract:
 	${MV} ${WRKDIR}/${PORTNAME} ${WRKSRC} 
 
 do-build:
-	#Build Joplin-Server
+	# Build Joplin-Server
 	(cd ${WRKSRC} && \
 	    ${SETENV} ${MAKE_ENV} ${NPM_CMDNAME} install --inline-builds && \
 	    ${SETENV} ${MAKE_ENV} ${NPM_CMDNAME} workspaces focus --production --all)

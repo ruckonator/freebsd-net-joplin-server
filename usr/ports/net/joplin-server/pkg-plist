@@ -19,6 +19,7 @@ libexec/joplin-server/node_modules/.bin/prettier
 libexec/joplin-server/node_modules/.bin/resolve
 libexec/joplin-server/node_modules/.bin/semver
 libexec/joplin-server/node_modules/.bin/update-browserslist-db
+libexec/joplin-server/node_modules/.package-map.json
 libexec/joplin-server/node_modules/.yarn-state.yml
 libexec/joplin-server/node_modules/@babel/runtime/LICENSE
 libexec/joplin-server/node_modules/@babel/runtime/README.md
@@ -15711,7 +15712,6 @@ libexec/joplin-server/packages/lib/node_modules/.bin/object-to-arguments
 libexec/joplin-server/packages/lib/node_modules/.bin/rimraf
 libexec/joplin-server/packages/lib/node_modules/.bin/semver
 libexec/joplin-server/packages/lib/node_modules/.bin/stringify-parameters
-libexec/joplin-server/packages/lib/node_modules/.bin/uglifycss
 libexec/joplin-server/packages/lib/node_modules/.bin/uglifyjs
 libexec/joplin-server/packages/lib/node_modules/.bin/uuid
 libexec/joplin-server/packages/lib/node_modules/.bin/xml2js
@@ -25535,7 +25535,7 @@ libexec/joplin-server/packages/lib/node_modules/sqlite3/build-tmp-napi-v6/Releas
 libexec/joplin-server/packages/lib/node_modules/sqlite3/build-tmp-napi-v6/Release/.deps/Release/obj.target/sqlite3/gen/sqlite-autoconf-3410100/sqlite3.o.d
 libexec/joplin-server/packages/lib/node_modules/sqlite3/build-tmp-napi-v6/Release/.deps/Release/obj/gen/sqlite-autoconf-3410100/sqlite3.c.d
 libexec/joplin-server/packages/lib/node_modules/sqlite3/build-tmp-napi-v6/Release/.deps/Release/sqlite3.a.d
-libexec/joplin-server/packages/lib/node_modules/sqlite3/build-tmp-napi-v6/Release/.deps/wrkdirs/usr/ports/textproc/joplin-server/work/joplin-server-v3.7.3/packages/lib/node_modules/sqlite3/lib/binding/napi-v6-freebsd-unknown-x64/node_sqlite3.node.d
+libexec/joplin-server/packages/lib/node_modules/sqlite3/build-tmp-napi-v6/Release/.deps/wrkdirs/usr/ports/textproc/joplin-server/work/joplin-server-v3.7.4/packages/lib/node_modules/sqlite3/lib/binding/napi-v6-freebsd-unknown-x64/node_sqlite3.node.d
 libexec/joplin-server/packages/lib/node_modules/sqlite3/build-tmp-napi-v6/Release/node-addon-api/nothing.a
 libexec/joplin-server/packages/lib/node_modules/sqlite3/build-tmp-napi-v6/Release/node_sqlite3.node
 libexec/joplin-server/packages/lib/node_modules/sqlite3/build-tmp-napi-v6/Release/nothing.a
@@ -26208,12 +26208,6 @@ libexec/joplin-server/packages/lib/node_modules/uglify-js/tools/domprops.json
 libexec/joplin-server/packages/lib/node_modules/uglify-js/tools/exports.js
 libexec/joplin-server/packages/lib/node_modules/uglify-js/tools/node.js
 libexec/joplin-server/packages/lib/node_modules/uglify-js/tools/tty.js
-libexec/joplin-server/packages/lib/node_modules/uglifycss/LICENSE
-libexec/joplin-server/packages/lib/node_modules/uglifycss/README.md
-libexec/joplin-server/packages/lib/node_modules/uglifycss/index.js
-libexec/joplin-server/packages/lib/node_modules/uglifycss/package.json
-libexec/joplin-server/packages/lib/node_modules/uglifycss/uglifycss
-libexec/joplin-server/packages/lib/node_modules/uglifycss/uglifycss-lib.js
 libexec/joplin-server/packages/lib/node_modules/uid-safe/HISTORY.md
 libexec/joplin-server/packages/lib/node_modules/uid-safe/LICENSE
 libexec/joplin-server/packages/lib/node_modules/uid-safe/README.md
@@ -26919,6 +26913,7 @@ libexec/joplin-server/packages/lib/services/ai/tools/global/listTags.ts
 libexec/joplin-server/packages/lib/services/ai/tools/global/manageTags.ts
 libexec/joplin-server/packages/lib/services/ai/tools/global/readImage.ts
 libexec/joplin-server/packages/lib/services/ai/tools/global/readNote.ts
+libexec/joplin-server/packages/lib/services/ai/tools/global/readNotes.ts
 libexec/joplin-server/packages/lib/services/ai/tools/global/searchNotes.ts
 libexec/joplin-server/packages/lib/services/ai/tools/global/semanticSearchNotes.ts
 libexec/joplin-server/packages/lib/services/ai/tools/global/updateNote.ts
@@ -26926,6 +26921,9 @@ libexec/joplin-server/packages/lib/services/ai/tools/types.ts
 libexec/joplin-server/packages/lib/services/ai/tools/utils/applyNoteEdits.test.ts
 libexec/joplin-server/packages/lib/services/ai/tools/utils/applyNoteEdits.ts
 libexec/joplin-server/packages/lib/services/ai/tools/utils/buildTool.ts
+libexec/joplin-server/packages/lib/services/ai/tools/utils/loadNoteForReading.ts
+libexec/joplin-server/packages/lib/services/ai/tools/utils/noteOutline.test.ts
+libexec/joplin-server/packages/lib/services/ai/tools/utils/noteOutline.ts
 libexec/joplin-server/packages/lib/services/ai/tools/utils/serializeToolOutput.ts
 libexec/joplin-server/packages/lib/services/ai/tools/utils/settings.ts
 libexec/joplin-server/packages/lib/services/ai/types.ts
@@ -26992,6 +26990,7 @@ libexec/joplin-server/packages/lib/services/e2ee/ppk/webCrypto/buildRsaCryptoPro
 libexec/joplin-server/packages/lib/services/e2ee/types.ts
 libexec/joplin-server/packages/lib/services/e2ee/utils.test.ts
 libexec/joplin-server/packages/lib/services/e2ee/utils.ts
+libexec/joplin-server/packages/lib/services/interop/InteropService.noteLock.test.ts
 libexec/joplin-server/packages/lib/services/interop/InteropService.test.ts
 libexec/joplin-server/packages/lib/services/interop/InteropService.ts
 libexec/joplin-server/packages/lib/services/interop/InteropService_Exporter_Base.ts
@@ -27052,6 +27051,8 @@ libexec/joplin-server/packages/lib/services/noteList/renderViewProps.test.ts
 libexec/joplin-server/packages/lib/services/noteList/renderViewProps.ts
 libexec/joplin-server/packages/lib/services/noteList/renderers.ts
 libexec/joplin-server/packages/lib/services/noteLock/NoteLockKey.ts
+libexec/joplin-server/packages/lib/services/noteLock/NoteLockKeyMigration.test.ts
+libexec/joplin-server/packages/lib/services/noteLock/NoteLockKeyMigration.ts
 libexec/joplin-server/packages/lib/services/noteLock/NoteLockNote.ts
 libexec/joplin-server/packages/lib/services/noteLock/NoteLockService.test.ts
 libexec/joplin-server/packages/lib/services/noteLock/NoteLockService.ts
@@ -27059,6 +27060,8 @@ libexec/joplin-server/packages/lib/services/noteLock/NoteLockSession.test.ts
 libexec/joplin-server/packages/lib/services/noteLock/NoteLockSession.ts
 libexec/joplin-server/packages/lib/services/noteLock/hasLockedNoteWhileSessionLocked.ts
 libexec/joplin-server/packages/lib/services/noteLock/isNoteLockEnabled.ts
+libexec/joplin-server/packages/lib/services/noteLock/noteLockPrompts.test.ts
+libexec/joplin-server/packages/lib/services/noteLock/noteLockPrompts.ts
 libexec/joplin-server/packages/lib/services/noteLock/setNoteLockState.test.ts
 libexec/joplin-server/packages/lib/services/noteLock/setNoteLockState.ts
 libexec/joplin-server/packages/lib/services/ocr/OcrDriverBase.ts
@@ -27174,6 +27177,7 @@ libexec/joplin-server/packages/lib/services/rest/utils/defaultAction.ts
 libexec/joplin-server/packages/lib/services/rest/utils/defaultLoadOptions.ts
 libexec/joplin-server/packages/lib/services/rest/utils/defaultSaveOptions.ts
 libexec/joplin-server/packages/lib/services/rest/utils/errors.ts
+libexec/joplin-server/packages/lib/services/rest/utils/lockedNoteBodies.ts
 libexec/joplin-server/packages/lib/services/rest/utils/paginatedResults.ts
 libexec/joplin-server/packages/lib/services/rest/utils/readonlyProperties.ts
 libexec/joplin-server/packages/lib/services/rest/utils/requestFields.ts
@@ -27214,6 +27218,7 @@ libexec/joplin-server/packages/lib/services/synchronizer/Synchronizer.baseFields
 libexec/joplin-server/packages/lib/services/synchronizer/Synchronizer.basics.test.ts
 libexec/joplin-server/packages/lib/services/synchronizer/Synchronizer.conflicts.test.ts
 libexec/joplin-server/packages/lib/services/synchronizer/Synchronizer.e2ee.test.ts
+libexec/joplin-server/packages/lib/services/synchronizer/Synchronizer.noteLock.test.ts
 libexec/joplin-server/packages/lib/services/synchronizer/Synchronizer.ppk.test.ts
 libexec/joplin-server/packages/lib/services/synchronizer/Synchronizer.resources.test.ts
 libexec/joplin-server/packages/lib/services/synchronizer/Synchronizer.revisions.test.ts
@@ -27291,6 +27296,8 @@ libexec/joplin-server/packages/lib/urlUtils.ts
 libexec/joplin-server/packages/lib/utils/ActionLogger.test.ts
 libexec/joplin-server/packages/lib/utils/ActionLogger.ts
 libexec/joplin-server/packages/lib/utils/attachedResources.ts
+libexec/joplin-server/packages/lib/utils/compactCss.test.ts
+libexec/joplin-server/packages/lib/utils/compactCss.ts
 libexec/joplin-server/packages/lib/utils/credentialFiles.ts
 libexec/joplin-server/packages/lib/utils/dom/makeSandboxedIframe.ts
 libexec/joplin-server/packages/lib/utils/focusHandler.ts
@@ -27313,6 +27320,8 @@ libexec/joplin-server/packages/lib/utils/joplinCloud/types.ts
 libexec/joplin-server/packages/lib/utils/markupLanguageUtils.ts
 libexec/joplin-server/packages/lib/utils/prefixWithHttps.ts
 libexec/joplin-server/packages/lib/utils/processStartFlags.ts
+libexec/joplin-server/packages/lib/utils/publicNetworkOnly.test.ts
+libexec/joplin-server/packages/lib/utils/publicNetworkOnly.ts
 libexec/joplin-server/packages/lib/utils/replaceUnsupportedCharacters.test.ts
 libexec/joplin-server/packages/lib/utils/replaceUnsupportedCharacters.ts
 libexec/joplin-server/packages/lib/utils/resolvePathWithinDir.test.ts
@@ -38117,6 +38126,10 @@ libexec/joplin-server/packages/server/node_modules/knex/lib/dialects/cockroachdb
 libexec/joplin-server/packages/server/node_modules/knex/lib/dialects/cockroachdb/crdb-viewcompiler.js
 libexec/joplin-server/packages/server/node_modules/knex/lib/dialects/cockroachdb/index.js
 libexec/joplin-server/packages/server/node_modules/knex/lib/dialects/index.js
+libexec/joplin-server/packages/server/node_modules/knex/lib/dialects/mariadb/index.js
+libexec/joplin-server/packages/server/node_modules/knex/lib/dialects/mariadb/query/mariadb-querycompiler.js
+libexec/joplin-server/packages/server/node_modules/knex/lib/dialects/mariadb/schema/mariadb-columncompiler.js
+libexec/joplin-server/packages/server/node_modules/knex/lib/dialects/mariadb/transaction.js
 libexec/joplin-server/packages/server/node_modules/knex/lib/dialects/mssql/index.js
 libexec/joplin-server/packages/server/node_modules/knex/lib/dialects/mssql/mssql-formatter.js
 libexec/joplin-server/packages/server/node_modules/knex/lib/dialects/mssql/query/mssql-querycompiler.js
@@ -38242,6 +38255,7 @@ libexec/joplin-server/packages/server/node_modules/knex/lib/migrations/util/impo
 libexec/joplin-server/packages/server/node_modules/knex/lib/migrations/util/is-module-type.js
 libexec/joplin-server/packages/server/node_modules/knex/lib/migrations/util/template.js
 libexec/joplin-server/packages/server/node_modules/knex/lib/migrations/util/timestamp.js
+libexec/joplin-server/packages/server/node_modules/knex/lib/pool.js
 libexec/joplin-server/packages/server/node_modules/knex/lib/query/analytic.js
 libexec/joplin-server/packages/server/node_modules/knex/lib/query/constants.js
 libexec/joplin-server/packages/server/node_modules/knex/lib/query/joinclause.js
@@ -41854,7 +41868,7 @@ libexec/joplin-server/packages/server/node_modules/sqlite3/build-tmp-napi-v6/Rel
 libexec/joplin-server/packages/server/node_modules/sqlite3/build-tmp-napi-v6/Release/.deps/Release/obj.target/sqlite3/gen/sqlite-autoconf-3410100/sqlite3.o.d
 libexec/joplin-server/packages/server/node_modules/sqlite3/build-tmp-napi-v6/Release/.deps/Release/obj/gen/sqlite-autoconf-3410100/sqlite3.c.d
 libexec/joplin-server/packages/server/node_modules/sqlite3/build-tmp-napi-v6/Release/.deps/Release/sqlite3.a.d
-libexec/joplin-server/packages/server/node_modules/sqlite3/build-tmp-napi-v6/Release/.deps/wrkdirs/usr/ports/textproc/joplin-server/work/joplin-server-v3.7.3/packages/server/node_modules/sqlite3/lib/binding/napi-v6-freebsd-unknown-x64/node_sqlite3.node.d
+libexec/joplin-server/packages/server/node_modules/sqlite3/build-tmp-napi-v6/Release/.deps/wrkdirs/usr/ports/textproc/joplin-server/work/joplin-server-v3.7.4/packages/server/node_modules/sqlite3/lib/binding/napi-v6-freebsd-unknown-x64/node_sqlite3.node.d
 libexec/joplin-server/packages/server/node_modules/sqlite3/build-tmp-napi-v6/Release/node-addon-api/nothing.a
 libexec/joplin-server/packages/server/node_modules/sqlite3/build-tmp-napi-v6/Release/node_sqlite3.node
 libexec/joplin-server/packages/server/node_modules/sqlite3/build-tmp-napi-v6/Release/nothing.a
@@ -43644,9 +43658,15 @@ libexec/joplin-server/packages/server/src/utils/metrics.ts
 libexec/joplin-server/packages/server/src/utils/prettycron.testdisabled.ts
 libexec/joplin-server/packages/server/src/utils/prettycron.ts
 libexec/joplin-server/packages/server/src/utils/renderMarkdown.ts
+libexec/joplin-server/packages/server/src/utils/request/accountActionLimiter.ts
+libexec/joplin-server/packages/server/src/utils/request/accountBruteForceLimiter.ts
 libexec/joplin-server/packages/server/src/utils/request/bruteForceLimiter.ts
 libexec/joplin-server/packages/server/src/utils/request/limiterAccountBruteForce.ts
+libexec/joplin-server/packages/server/src/utils/request/limiterEmailChanges.ts
 libexec/joplin-server/packages/server/src/utils/request/limiterLoginBruteForce.ts
+libexec/joplin-server/packages/server/src/utils/request/limiterLoginCodeFailures.ts
+libexec/joplin-server/packages/server/src/utils/request/limiterShareInvitations.ts
+libexec/joplin-server/packages/server/src/utils/requestUtils.test.ts
 libexec/joplin-server/packages/server/src/utils/requestUtils.ts
 libexec/joplin-server/packages/server/src/utils/routeUtils.test.ts
 libexec/joplin-server/packages/server/src/utils/routeUtils.ts
@@ -43700,6 +43720,7 @@ libexec/joplin-server/packages/server/src/views/emails/accountConfirmationTempla
 libexec/joplin-server/packages/server/src/views/emails/changeEmailConfirmationTemplate.ts
 libexec/joplin-server/packages/server/src/views/emails/changeEmailNotificationTemplate.ts
 libexec/joplin-server/packages/server/src/views/emails/endOfBetaTemplate.ts
+libexec/joplin-server/packages/server/src/views/emails/itemPublishedTemplate.ts
 libexec/joplin-server/packages/server/src/views/emails/oversizedAccount1.ts
 libexec/joplin-server/packages/server/src/views/emails/oversizedAccount2.ts
 libexec/joplin-server/packages/server/src/views/emails/paymentFailedAccountDisabledTemplate.ts
@@ -43897,6 +43918,7 @@ libexec/joplin-server/packages/tools/locales/ro_RO.po
 libexec/joplin-server/packages/tools/locales/ru_RU.po
 libexec/joplin-server/packages/tools/locales/sk_SK.po
 libexec/joplin-server/packages/tools/locales/sl_SI.po
+libexec/joplin-server/packages/tools/locales/sq.po
 libexec/joplin-server/packages/tools/locales/sr_RS.po
 libexec/joplin-server/packages/tools/locales/sv.po
 libexec/joplin-server/packages/tools/locales/th_TH.po
