@@ -346,7 +346,7 @@ spectrumknx:*:401:
 lid_switchd:*:402:
 airplane_radiosd:*:403:
 svn:*:404:
-# free: 405
+rustfs:*:405:
 # free: 406
 # free: 407
 # free: 408
@@ -511,8 +511,8 @@ polkitd:*:565:
 # free: 566
 # free: 567
 # free: 568
-# free: 569
 joplin:*:569:
+# free: 570
 ttrssd:*:571:
 # free: 572
 # free: 573
