@@ -1,1 +1,4 @@
-Server backend for joplin notetaking clients.
+Server backend for joplin notetaking clients. Can be used with
+Joplin desktop, cli, mobile and compatible clients.  Manage
+users from webgui. Using the server also allows sharing notbooks
+with other users. Allows the use of Postgres or sqlite to hold data.
