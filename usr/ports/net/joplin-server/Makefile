@@ -14,8 +14,8 @@ WWW=		https://joplinapp.org/
 
 LICENSE=	MIT
 
-FETCH_DEPENDS=  npm${NODEJS_SUFFIX}>0:www/npm${NODEJS_SUFFIX}
-BUILD_DEPENDS=  npm${NODEJS_SUFFIX}>0:www/npm${NODEJS_SUFFIX}
+FETCH_DEPENDS=	npm${NODEJS_SUFFIX}>0:www/npm${NODEJS_SUFFIX}
+BUILD_DEPENDS=	npm${NODEJS_SUFFIX}>0:www/npm${NODEJS_SUFFIX}
 
 USES=		nodejs:24,build,run npm:yarn4,build python:build
 
@@ -26,16 +26,14 @@ USE_RC_SUBR=	${PORTNAME}
 
 USERS=		joplin
 GROUPS=		joplin
-MAKE_ENV+= npm_config_nodedir=${WRKDIR}/node-v24.22.2 SHARP_FORCE_GLOBAL_LIBVIPS=1 BUILD_SEQUENCIAL=1 \
-		   YARN_ENABLE_GLOBAL_CACHE=false YARN_ENABLE_NETWORK=false YARN_CACHE_FOLDER=${WRKDIR}/node-modules-cache
-
+MAKE_ENV+=	npm_config_nodedir=${WRKDIR}/node-v24.22.2 SHARP_FORCE_GLOBAL_LIBVIPS=1 BUILD_SEQUENCIAL=1 \
+			YARN_ENABLE_GLOBAL_CACHE=false YARN_ENABLE_NETWORK=false YARN_CACHE_FOLDER=${WRKDIR}/node-modules-cache
 BINARY_ALIAS=	python3=${PYTHON_CMD}
-
 
 TARGET_ORDER_OVERRIDE=	750:npm-install-node-modules
 
 post-extract:
-	# Copy over only the packages needed for joplin server 
+	# Copy over only the packages needed for joplin server
 	${MKDIR} ${WRKDIR}/${PORTNAME}/.yarn
 	${MKDIR} ${WRKDIR}/${PORTNAME}/packages/fork-sax
 	${CP} ${WRKSRC}/gulpfile.js ${WRKDIR}/${PORTNAME}/
@@ -59,7 +57,7 @@ post-extract:
 	${CP} -r ${WRKSRC}/.yarn/releases ${WRKDIR}/${PORTNAME}/.yarn
 	${CP} -r ${WRKSRC}/.yarn/patches ${WRKDIR}/${PORTNAME}/.yarn
 	${RM} -rf ${WRKSRC}
-	${MV} ${WRKDIR}/${PORTNAME} ${WRKSRC} 
+	${MV} ${WRKDIR}/${PORTNAME} ${WRKSRC}
 
 do-build:
 	# Build Joplin-Server
