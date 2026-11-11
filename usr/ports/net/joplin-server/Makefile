@@ -1,7 +1,7 @@
 PORTNAME=	joplin
 DISTVERSIONPREFIX=	server-v
 DISTVERSION=	3.7.4
-CATEGORIES=	net
+CATEGORIES=		net
 MASTER_SITES=	https://github.com/ruckonator/freebsd-net-joplin-server/raw/refs/heads/tarballs/node-modules/:prefetch \
 				https://nodejs.org/download/release/v24.22.2/:node_headers
 PKGNAMESUFFIX=	-server
@@ -9,14 +9,13 @@ DISTFILES=		${PORTNAME}${PKGNAMESUFFIX}-${DISTVERSION}-node-modules${EXTRACT_SUF
 				node-v24.22.2-headers${EXTRACT_SUFX}:node_headers
 
 MAINTANIER=	freebsd@perpetualthought.com
-COMMENT=	Server Backend for the Joplin Notetaking application
+COMMENT=	Server backend for the Joplin notetaking application
 WWW=		https://joplinapp.org/
 
 LICENSE=	MIT
 
-FETCH_DEPENDS=	npm${NODEJS_SUFFIX}>0:www/npm${NODEJS_SUFFIX}
-BUILD_DEPENDS=	npm${NODEJS_SUFFIX}>0:www/npm${NODEJS_SUFFIX}
-LIB_DEPENDS=	libvips.so:graphics/vips
+FETCH_DEPENDS=  npm${NODEJS_SUFFIX}>0:www/npm${NODEJS_SUFFIX}
+BUILD_DEPENDS=  npm${NODEJS_SUFFIX}>0:www/npm${NODEJS_SUFFIX}
 
 USES=		nodejs:24,build,run npm:yarn4,build python:build
 
@@ -27,15 +26,16 @@ USE_RC_SUBR=	${PORTNAME}
 
 USERS=		joplin
 GROUPS=		joplin
-MAKE_ENV+=	npm_config_nodedir=${WRKDIR}/node-v24.22.2 SHARP_FORCE_GLOBAL_LIBVIPS=1 BUILD_SEQUENCIAL=1 \
-			YARN_ENABLE_GLOBAL_CACHE=false YARN_ENABLE_NETWORK=false YARN_CACHE_FOLDER=${WRKDIR}/node-modules-cache
+MAKE_ENV+= npm_config_nodedir=${WRKDIR}/node-v24.22.2 SHARP_FORCE_GLOBAL_LIBVIPS=1 BUILD_SEQUENCIAL=1 \
+		   YARN_ENABLE_GLOBAL_CACHE=false YARN_ENABLE_NETWORK=false YARN_CACHE_FOLDER=${WRKDIR}/node-modules-cache
 
 BINARY_ALIAS=	python3=${PYTHON_CMD}
+
 
 TARGET_ORDER_OVERRIDE=	750:npm-install-node-modules
 
 post-extract:
-	# Copy over only the packages needed for joplin server
+	# Copy over only the packages needed for joplin server 
 	${MKDIR} ${WRKDIR}/${PORTNAME}/.yarn
 	${MKDIR} ${WRKDIR}/${PORTNAME}/packages/fork-sax
 	${CP} ${WRKSRC}/gulpfile.js ${WRKDIR}/${PORTNAME}/
@@ -59,13 +59,19 @@ post-extract:
 	${CP} -r ${WRKSRC}/.yarn/releases ${WRKDIR}/${PORTNAME}/.yarn
 	${CP} -r ${WRKSRC}/.yarn/patches ${WRKDIR}/${PORTNAME}/.yarn
 	${RM} -rf ${WRKSRC}
-	${MV} ${WRKDIR}/${PORTNAME} ${WRKSRC}
+	${MV} ${WRKDIR}/${PORTNAME} ${WRKSRC} 
 
 do-build:
 	# Build Joplin-Server
 	(cd ${WRKSRC} && \
-	    ${SETENV} ${MAKE_ENV} ${NPM_CMDNAME} install --inline-builds && \
-	    ${SETENV} ${MAKE_ENV} ${NPM_CMDNAME} workspaces focus --production --all)
+		${SETENV} ${MAKE_ENV} ${NPM_CMDNAME} install --inline-builds)
+
+post-build:
+	# Copy in the package.json without the postinstall var and clean the
+	# build dependecies
+	(cd ${WRKSRC} && \
+		${CP} ${FILESDIR}/postbuildpackage.json ${WRKSRC}/package.json && \
+		${SETENV} ${MAKE_ENV} ${NPM_CMDNAME} workspaces focus --production --all)
 
 do-install:
 	${MKDIR} ${STAGEDIR}${ETCDIR} \
