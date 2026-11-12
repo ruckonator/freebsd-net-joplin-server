@@ -26032,7 +26032,7 @@ libexec/joplin-server/packages/lib/node_modules/sqlite3/build-tmp-napi-v6/Releas
 libexec/joplin-server/packages/lib/node_modules/sqlite3/build-tmp-napi-v6/Release/.deps/Release/obj.target/sqlite3/gen/sqlite-autoconf-3410100/sqlite3.o.d
 libexec/joplin-server/packages/lib/node_modules/sqlite3/build-tmp-napi-v6/Release/.deps/Release/obj/gen/sqlite-autoconf-3410100/sqlite3.c.d
 libexec/joplin-server/packages/lib/node_modules/sqlite3/build-tmp-napi-v6/Release/.deps/Release/sqlite3.a.d
-libexec/joplin-server/packages/lib/node_modules/sqlite3/build-tmp-napi-v6/Release/.deps/wrkdirs/usr/ports/textproc/joplin-server/work/joplin-server-v3.7.4/packages/lib/node_modules/sqlite3/lib/binding/napi-v6-freebsd-unknown-x64/node_sqlite3.node.d
+libexec/joplin-server/packages/lib/node_modules/sqlite3/build-tmp-napi-v6/Release/.deps/wrkdirs/usr/ports/textproc/joplin-server/work/joplin-server-v3.7.5/packages/lib/node_modules/sqlite3/lib/binding/napi-v6-freebsd-unknown-x64/node_sqlite3.node.d
 libexec/joplin-server/packages/lib/node_modules/sqlite3/build-tmp-napi-v6/Release/node-addon-api/nothing.a
 libexec/joplin-server/packages/lib/node_modules/sqlite3/build-tmp-napi-v6/Release/node_sqlite3.node
 libexec/joplin-server/packages/lib/node_modules/sqlite3/build-tmp-napi-v6/Release/nothing.a
@@ -27559,12 +27559,18 @@ libexec/joplin-server/packages/lib/services/ai/providers/OpenAiCompatible.ts
 libexec/joplin-server/packages/lib/services/ai/providers/TestProvider.js
 libexec/joplin-server/packages/lib/services/ai/providers/TestProvider.js.map
 libexec/joplin-server/packages/lib/services/ai/providers/TestProvider.ts
+libexec/joplin-server/packages/lib/services/ai/providers/openAiResponses.js
+libexec/joplin-server/packages/lib/services/ai/providers/openAiResponses.js.map
+libexec/joplin-server/packages/lib/services/ai/providers/openAiResponses.ts
 libexec/joplin-server/packages/lib/services/ai/testing/TestEmbeddingProvider.js
 libexec/joplin-server/packages/lib/services/ai/testing/TestEmbeddingProvider.js.map
 libexec/joplin-server/packages/lib/services/ai/testing/TestEmbeddingProvider.test.js
 libexec/joplin-server/packages/lib/services/ai/testing/TestEmbeddingProvider.test.js.map
 libexec/joplin-server/packages/lib/services/ai/testing/TestEmbeddingProvider.test.ts
 libexec/joplin-server/packages/lib/services/ai/testing/TestEmbeddingProvider.ts
+libexec/joplin-server/packages/lib/services/ai/testing/mockOpenAiServer.js
+libexec/joplin-server/packages/lib/services/ai/testing/mockOpenAiServer.js.map
+libexec/joplin-server/packages/lib/services/ai/testing/mockOpenAiServer.ts
 libexec/joplin-server/packages/lib/services/ai/tools/ToolIndex.js
 libexec/joplin-server/packages/lib/services/ai/tools/ToolIndex.js.map
 libexec/joplin-server/packages/lib/services/ai/tools/ToolIndex.ts
@@ -27649,6 +27655,9 @@ libexec/joplin-server/packages/lib/services/ai/utils/extractReasoning.ts
 libexec/joplin-server/packages/lib/services/ai/utils/findFencedBlock.js
 libexec/joplin-server/packages/lib/services/ai/utils/findFencedBlock.js.map
 libexec/joplin-server/packages/lib/services/ai/utils/findFencedBlock.ts
+libexec/joplin-server/packages/lib/services/ai/utils/parseToolArguments.js
+libexec/joplin-server/packages/lib/services/ai/utils/parseToolArguments.js.map
+libexec/joplin-server/packages/lib/services/ai/utils/parseToolArguments.ts
 libexec/joplin-server/packages/lib/services/commands/MenuUtils.js
 libexec/joplin-server/packages/lib/services/commands/MenuUtils.js.map
 libexec/joplin-server/packages/lib/services/commands/MenuUtils.ts
@@ -30361,6 +30370,7 @@ libexec/joplin-server/packages/renderer/node_modules/highlight.js/scss/tokyo-nig
 libexec/joplin-server/packages/renderer/node_modules/highlight.js/scss/tokyo-night-light.scss
 libexec/joplin-server/packages/renderer/node_modules/highlight.js/scss/tomorrow-night-blue.scss
 libexec/joplin-server/packages/renderer/node_modules/highlight.js/scss/tomorrow-night-bright.scss
+libexec/joplin-server/packages/renderer/node_modules/highlight.js/scss/vs-dark.scss
 libexec/joplin-server/packages/renderer/node_modules/highlight.js/scss/vs.scss
 libexec/joplin-server/packages/renderer/node_modules/highlight.js/scss/vs2015.scss
 libexec/joplin-server/packages/renderer/node_modules/highlight.js/scss/xcode.scss
@@ -30871,6 +30881,8 @@ libexec/joplin-server/packages/renderer/node_modules/highlight.js/styles/tomorro
 libexec/joplin-server/packages/renderer/node_modules/highlight.js/styles/tomorrow-night-blue.min.css
 libexec/joplin-server/packages/renderer/node_modules/highlight.js/styles/tomorrow-night-bright.css
 libexec/joplin-server/packages/renderer/node_modules/highlight.js/styles/tomorrow-night-bright.min.css
+libexec/joplin-server/packages/renderer/node_modules/highlight.js/styles/vs-dark.css
+libexec/joplin-server/packages/renderer/node_modules/highlight.js/styles/vs-dark.min.css
 libexec/joplin-server/packages/renderer/node_modules/highlight.js/styles/vs.css
 libexec/joplin-server/packages/renderer/node_modules/highlight.js/styles/vs.min.css
 libexec/joplin-server/packages/renderer/node_modules/highlight.js/styles/vs2015.css
@@ -44145,7 +44157,7 @@ libexec/joplin-server/packages/server/node_modules/sqlite3/build-tmp-napi-v6/Rel
 libexec/joplin-server/packages/server/node_modules/sqlite3/build-tmp-napi-v6/Release/.deps/Release/obj.target/sqlite3/gen/sqlite-autoconf-3410100/sqlite3.o.d
 libexec/joplin-server/packages/server/node_modules/sqlite3/build-tmp-napi-v6/Release/.deps/Release/obj/gen/sqlite-autoconf-3410100/sqlite3.c.d
 libexec/joplin-server/packages/server/node_modules/sqlite3/build-tmp-napi-v6/Release/.deps/Release/sqlite3.a.d
-libexec/joplin-server/packages/server/node_modules/sqlite3/build-tmp-napi-v6/Release/.deps/wrkdirs/usr/ports/textproc/joplin-server/work/joplin-server-v3.7.4/packages/server/node_modules/sqlite3/lib/binding/napi-v6-freebsd-unknown-x64/node_sqlite3.node.d
+libexec/joplin-server/packages/server/node_modules/sqlite3/build-tmp-napi-v6/Release/.deps/wrkdirs/usr/ports/textproc/joplin-server/work/joplin-server-v3.7.5/packages/server/node_modules/sqlite3/lib/binding/napi-v6-freebsd-unknown-x64/node_sqlite3.node.d
 libexec/joplin-server/packages/server/node_modules/sqlite3/build-tmp-napi-v6/Release/node-addon-api/nothing.a
 libexec/joplin-server/packages/server/node_modules/sqlite3/build-tmp-napi-v6/Release/node_sqlite3.node
 libexec/joplin-server/packages/server/node_modules/sqlite3/build-tmp-napi-v6/Release/nothing.a
@@ -46296,6 +46308,7 @@ libexec/joplin-server/packages/tools/locales/bg_BG.po
 libexec/joplin-server/packages/tools/locales/bs_BA.po
 libexec/joplin-server/packages/tools/locales/ca.po
 libexec/joplin-server/packages/tools/locales/cs_CZ.po
+libexec/joplin-server/packages/tools/locales/cy_GB.po
 libexec/joplin-server/packages/tools/locales/da_DK.po
 libexec/joplin-server/packages/tools/locales/de_DE.po
 libexec/joplin-server/packages/tools/locales/el_GR.po
@@ -46333,6 +46346,7 @@ libexec/joplin-server/packages/tools/locales/sv.po
 libexec/joplin-server/packages/tools/locales/th_TH.po
 libexec/joplin-server/packages/tools/locales/tr_TR.po
 libexec/joplin-server/packages/tools/locales/uk_UA.po
+libexec/joplin-server/packages/tools/locales/ur.po
 libexec/joplin-server/packages/tools/locales/vi.po
 libexec/joplin-server/packages/tools/locales/zh_CN.po
 libexec/joplin-server/packages/tools/locales/zh_TW.po

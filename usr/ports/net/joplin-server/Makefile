@@ -1,6 +1,6 @@
 PORTNAME=	joplin
 DISTVERSIONPREFIX=	server-v
-DISTVERSION=	3.7.4
+DISTVERSION=	3.7.5
 CATEGORIES=		net
 MASTER_SITES=	https://github.com/ruckonator/freebsd-net-joplin-server/raw/refs/heads/tarballs/node-modules/:prefetch \
 				https://nodejs.org/download/release/v24.22.2/:node_headers
