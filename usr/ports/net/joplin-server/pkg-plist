@@ -26032,7 +26032,7 @@ libexec/joplin-server/packages/lib/node_modules/sqlite3/build-tmp-napi-v6/Releas
 libexec/joplin-server/packages/lib/node_modules/sqlite3/build-tmp-napi-v6/Release/.deps/Release/obj.target/sqlite3/gen/sqlite-autoconf-3410100/sqlite3.o.d
 libexec/joplin-server/packages/lib/node_modules/sqlite3/build-tmp-napi-v6/Release/.deps/Release/obj/gen/sqlite-autoconf-3410100/sqlite3.c.d
 libexec/joplin-server/packages/lib/node_modules/sqlite3/build-tmp-napi-v6/Release/.deps/Release/sqlite3.a.d
-libexec/joplin-server/packages/lib/node_modules/sqlite3/build-tmp-napi-v6/Release/.deps/wrkdirs/usr/ports/textproc/joplin-server/work/joplin-server-v3.7.5/packages/lib/node_modules/sqlite3/lib/binding/napi-v6-freebsd-unknown-x64/node_sqlite3.node.d
+libexec/joplin-server/packages/lib/node_modules/sqlite3/build-tmp-napi-v6/Release/.deps/wrkdirs/usr/ports/net/joplin-server/work/joplin-server-v3.7.5/packages/lib/node_modules/sqlite3/lib/binding/napi-v6-freebsd-unknown-x64/node_sqlite3.node.d
 libexec/joplin-server/packages/lib/node_modules/sqlite3/build-tmp-napi-v6/Release/node-addon-api/nothing.a
 libexec/joplin-server/packages/lib/node_modules/sqlite3/build-tmp-napi-v6/Release/node_sqlite3.node
 libexec/joplin-server/packages/lib/node_modules/sqlite3/build-tmp-napi-v6/Release/nothing.a
@@ -44157,7 +44157,7 @@ libexec/joplin-server/packages/server/node_modules/sqlite3/build-tmp-napi-v6/Rel
 libexec/joplin-server/packages/server/node_modules/sqlite3/build-tmp-napi-v6/Release/.deps/Release/obj.target/sqlite3/gen/sqlite-autoconf-3410100/sqlite3.o.d
 libexec/joplin-server/packages/server/node_modules/sqlite3/build-tmp-napi-v6/Release/.deps/Release/obj/gen/sqlite-autoconf-3410100/sqlite3.c.d
 libexec/joplin-server/packages/server/node_modules/sqlite3/build-tmp-napi-v6/Release/.deps/Release/sqlite3.a.d
-libexec/joplin-server/packages/server/node_modules/sqlite3/build-tmp-napi-v6/Release/.deps/wrkdirs/usr/ports/textproc/joplin-server/work/joplin-server-v3.7.5/packages/server/node_modules/sqlite3/lib/binding/napi-v6-freebsd-unknown-x64/node_sqlite3.node.d
+libexec/joplin-server/packages/server/node_modules/sqlite3/build-tmp-napi-v6/Release/.deps/wrkdirs/usr/ports/net/joplin-server/work/joplin-server-v3.7.5/packages/server/node_modules/sqlite3/lib/binding/napi-v6-freebsd-unknown-x64/node_sqlite3.node.d
 libexec/joplin-server/packages/server/node_modules/sqlite3/build-tmp-napi-v6/Release/node-addon-api/nothing.a
 libexec/joplin-server/packages/server/node_modules/sqlite3/build-tmp-napi-v6/Release/node_sqlite3.node
 libexec/joplin-server/packages/server/node_modules/sqlite3/build-tmp-napi-v6/Release/nothing.a
