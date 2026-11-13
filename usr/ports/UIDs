@@ -516,7 +516,7 @@ polkitd:*:565:565::0:0:Polkit Daemon User:/var/empty:/usr/sbin/nologin
 # free: 566
 # free: 567
 # free: 568
-joplin:*:569:569::0:0:Joplin User:/nonexistent:/usr/sbin/nologin
+joplin:*:569:569::0:0:Joplin User:/var/db/joplin:/usr/sbin/nologin
 # free: 570
 ttrssd:*:571:571::0:0:ttrssd user:/nonexistent:/usr/sbin/nologin
 # free: 572
