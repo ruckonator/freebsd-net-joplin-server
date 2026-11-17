@@ -1,9 +1,9 @@
-TIMESTAMP = 1794717367
+TIMESTAMP = 1794887462
+SHA256 (joplin-server-3.7.6-node-modules.tar.gz) = abf1943f09c0fc83530d21a5d2fbf1cbc0470f918cf6ede5e11227cc33da26a4
+SIZE (joplin-server-3.7.6-node-modules.tar.gz) = 397012992
 SHA256 (node-v24.22.3-headers.tar.gz) = bc93bde109befc916a62348caae708a48f9550150d786398fea2d773607c18da
 SIZE (node-v24.22.3-headers.tar.gz) = 10309326
 SHA256 (yarn-4.17.0.tgz) = d3dcdefb438925fe0bcc62f08bb24dfb5dab961b2b3047248af3c157244a0bd7
 SIZE (yarn-4.17.0.tgz) = 1063897
-SHA256 (joplin-server-3.7.5-node-modules.tar.gz) = 31749c107a0ea9bab1c6301b7c322a4ed205d7584ead5e5d43ee343118cae21c
-SIZE (joplin-server-3.7.5-node-modules.tar.gz) = 404923392
-SHA256 (laurent22-joplin-server-v3.7.5_GH0.tar.gz) = d3bf74b20b86f1eb777a41267c8290cdcb5570113c190a121ae0e4914e6d2cec
-SIZE (laurent22-joplin-server-v3.7.5_GH0.tar.gz) = 157415581
+SHA256 (laurent22-joplin-server-v3.7.6_GH0.tar.gz) = 18403dd4f6639d3f3cd68de8b62e2bb39c47c35c1de1f22a8658871c7d757408
+SIZE (laurent22-joplin-server-v3.7.6_GH0.tar.gz) = 157394312

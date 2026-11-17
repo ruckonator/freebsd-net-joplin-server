@@ -1,11 +1,11 @@
 PORTNAME=	joplin
 DISTVERSIONPREFIX=	server-v
-DISTVERSION=	3.7.5
+DISTVERSION=	3.7.6
 CATEGORIES=		net
 MASTER_SITES=	https://github.com/ruckonator/freebsd-net-joplin-server/raw/refs/heads/tarballs/node-modules/:prefetch \
 				https://nodejs.org/download/release/v24.22.3/:node_headers
 PKGNAMESUFFIX=	-server
-PORTREVISION=	1
+PORTREVISION=	0
 DISTFILES=		${PORTNAME}${PKGNAMESUFFIX}-${DISTVERSION}-node-modules${EXTRACT_SUFX}:prefetch \
 				node-v24.22.3-headers${EXTRACT_SUFX}:node_headers
 
@@ -38,7 +38,6 @@ post-extract:
 	${MKDIR} ${WRKDIR}/${PORTNAME}/.yarn
 	${MKDIR} ${WRKDIR}/${PORTNAME}/packages/fork-sax
 	${CP} ${WRKSRC}/gulpfile.js ${WRKDIR}/${PORTNAME}/
-	${CP} ${WRKSRC}/lerna.json ${WRKDIR}/${PORTNAME}/
 	${CP} ${WRKSRC}/package.json ${WRKDIR}/${PORTNAME}/
 	${CP} ${WRKSRC}/tsconfig.json ${WRKDIR}/${PORTNAME}/
 	${CP} ${WRKSRC}/yarn.lock ${WRKDIR}/${PORTNAME}/
